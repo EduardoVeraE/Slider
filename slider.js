@@ -19,7 +19,7 @@ define(["qlik","./properties","./initialProperties"], function(qlik, props, init
 							items : {
 								name : {
 									ref : "variableName",
-									label : "Nombre:",
+									label : "Nombre de variable a usar",
 									type : "string",
 									change : function(data) {
 										//create variable - ignore errors
