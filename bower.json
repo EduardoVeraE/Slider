@@ -1,0 +1,14 @@
+{
+    "name": "Slider",
+    "version": "1.0",
+    "description": "Qlik Sense Slider extension",
+    "author": "Eduardo Vera",
+    "license": "MIT",
+    "main": "slider.js",
+    "keywords": [
+        "qlik-sense, slider, chart, visualization"
+    ],
+    "dependencies": {
+        "qlik-sense": ">=1.1.x"
+    }
+}

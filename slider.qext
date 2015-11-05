@@ -1,0 +1,8 @@
+{
+    "name": "Slider",
+    "description": "Link a slider value to a variable",
+    "icon": "extension",
+    "type": "visualization",
+    "version": 1.0,
+    "author": "Eduardo Vera"
+}
