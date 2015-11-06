@@ -1,4 +1,4 @@
-define(["qlik","./properties","./initialProperties"], function(qlik, props, initProps) {
+define(["qlik"], function(qlik, props, initProps) {
 	return {
 		//initialProperties : initProps,
 		initialProperties : {
