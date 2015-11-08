@@ -1,10 +1,11 @@
-define(["qlik"], function(qlik, props, initProps) {
+define(["qlik"], function(qlik/*, props, initProps*/) {
 	return {
 		//initialProperties : initProps,
 		initialProperties : {
 			version : 1.0,
 			variableValue : {},
-			variableName : ""
+			variableName : "",
+			initialValue : 0
 		},
 		definition : {
 			type : "items",
@@ -22,9 +23,10 @@ define(["qlik"], function(qlik, props, initProps) {
 									label : "Nombre de variable a usar",
 									type : "string",
 									change : function(data) {
-										//create variable - ignore errors
+										// creación de la variable
 										qlik.currApp().variable.create(data.variableName);
 										data.variableValue.qStringExpression = '=' + data.variableName;
+										qlik.currApp(this).variable.setContent(data.variableName, data.initialValue);
 									}
 								},
 
